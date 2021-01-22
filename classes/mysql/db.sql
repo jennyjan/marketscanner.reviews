@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS b_market_scanner_review_elements;
-CREATE table if not exists b_market_scanner_review_elements (
+DROP TABLE IF EXISTS market_scanner_reviews_elements;
+CREATE table if not exists market_scanner_reviews_elements (
     ID int(11) not null AUTO_INCREMENT,
     ELEMENT_ID int(11) not null,
     AUTHOR varchar(255),
@@ -11,8 +11,8 @@ CREATE table if not exists b_market_scanner_review_elements (
     MARKET_SCANER_REVIEW_ID TEXT,
     PRIMARY KEY (ID)
 );
-DROP TABLE IF EXISTS b_market_scanner_review_done;
-CREATE table if not exists b_market_scanner_review_done (
+DROP TABLE IF EXISTS market_scanner_reviews_done;
+CREATE table if not exists market_scanner_reviews_done (
     ID int(11) not null AUTO_INCREMENT,
     ELEMENT_ID int(11) not null,
     REVIEW_COUNT int(11),
